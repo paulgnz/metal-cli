@@ -57,12 +57,12 @@ func NewRootCmd() *cobra.Command {
 	// rootCmd represents the base command when called without any subcommands
 	rootCmd := &cobra.Command{
 		Use: "metal",
-		Long: `Avalanche-CLI is a command-line tool that gives developers access to
-everything Avalanche. This release specializes in helping developers
-build and test Blockchain networks.
+		Long: `Metal CLI is a command-line tool that gives operators and developers
+access to everything Metal Blockchain. This release specializes in helping
+build, deploy and operate Blockchain networks and L1s on Metal.
 
 To get started, look at the documentation for the subcommands or jump right
-in with avalanche blockchain create myNewBlockchain.`,
+in with metal blockchain create myNewBlockchain.`,
 		PersistentPreRunE: createApp,
 		Version:           Version,
 		SilenceErrors:     true,

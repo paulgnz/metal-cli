@@ -85,9 +85,9 @@ func GetHRP(networkID uint32) string {
 	case constants.LocalID:
 		return constants.LocalHRP
 	case constants.FujiID:
-		return constants.FujiHRP
+		return "tahoe" // Metal testnet (network-id 5); avalanchego default is "fuji"
 	case constants.MainnetID:
-		return constants.MainnetHRP
+		return "metal" // Metal mainnet (network-id 1); avalanchego default is "avax"
 	default:
 		return constants.FallbackHRP
 	}
