@@ -140,7 +140,7 @@ const (
 	// Default weight when we prompt users for bootstrap validators
 	BootstrapValidatorWeight          = 100
 	DefaultStakeWeight                = 20
-	AVAXSymbol                        = "AVAX"
+	AVAXSymbol                        = "METAL"
 	DefaultFujiStakeDuration          = "48h"
 	DefaultMainnetStakeDuration       = "336h"
 	DefaultValidationIDExpiryDuration = 24 * time.Hour
