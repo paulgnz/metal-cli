@@ -24,7 +24,7 @@ type StopFlags struct {
 
 var stopFlags StopFlags
 
-// avalanche interchain signatureAggregator stop
+// metal interchain signatureAggregator stop
 func newStopCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "stop",

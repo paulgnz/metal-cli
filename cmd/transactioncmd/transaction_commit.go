@@ -20,7 +20,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche transaction commit
+// metal transaction commit
 func newTransactionCommitCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "commit [blockchainName]",
@@ -92,9 +92,9 @@ func commitTx(_ *cobra.Command, args []string) error {
 		ux.Logger.PrintToUser("If you desire to locally persist the blockchain metadata, please ensure")
 		ux.Logger.PrintToUser("that CLI manages the blockchain configuration.")
 		ux.Logger.PrintToUser("")
-		ux.Logger.PrintToUser("For that you should use the machine where 'avalanche blockchain create' was")
+		ux.Logger.PrintToUser("For that you should use the machine where 'metal blockchain create' was")
 		ux.Logger.PrintToUser("executed, or use another machine but first follow a export/import procedure using")
-		ux.Logger.PrintToUser("'avalanche blockchain export' 'avalanche blockchain import file'")
+		ux.Logger.PrintToUser("'metal blockchain export' 'metal blockchain import file'")
 		ux.Logger.PrintToUser("")
 		ux.Logger.PrintToUser("In case of continuing without preserving the metadata, please keep a manual record of")
 		ux.Logger.PrintToUser("the subnet ID and the new blockchain ID")
@@ -171,7 +171,7 @@ func commitTx(_ *cobra.Command, args []string) error {
 		if err != nil {
 			return err
 		}
-		ux.Logger.PrintToUser("To finish conversion to sovereign L1, call `avalanche contract initValidatorManager %s` to finish conversion to sovereign L1", blockchainName)
+		ux.Logger.PrintToUser("To finish conversion to sovereign L1, call `metal contract initValidatorManager %s` to finish conversion to sovereign L1", blockchainName)
 	}
 
 	return nil

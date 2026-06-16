@@ -46,7 +46,7 @@ const (
 
 var deployFlags DeployFlags
 
-// avalanche interchain messenger deploy
+// metal interchain messenger deploy
 func NewDeployCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "deploy",

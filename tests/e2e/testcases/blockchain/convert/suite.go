@@ -28,7 +28,7 @@ const ewoqEVMAddress = "0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC"
 func checkConvertOnlyOutput(output string, generateNodeID bool) {
 	gomega.Expect(output).Should(gomega.ContainSubstring("Converted blockchain successfully generated"))
 	gomega.Expect(output).Should(gomega.ContainSubstring("Have the Avalanche node(s) track the blockchain"))
-	gomega.Expect(output).Should(gomega.ContainSubstring("Call `avalanche contract initValidatorManager testSubnet`"))
+	gomega.Expect(output).Should(gomega.ContainSubstring("Call `metal contract initValidatorManager testSubnet`"))
 	gomega.Expect(output).Should(gomega.ContainSubstring("Ensure that the P2P port is exposed and 'public-ip' config value is set"))
 	gomega.Expect(output).Should(gomega.ContainSubstring("Subnet is successfully converted to sovereign L1"))
 	if generateNodeID {

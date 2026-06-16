@@ -15,7 +15,7 @@ func newDevnetCmd() *cobra.Command {
 		Long: `(ALPHA Warning) This command is currently in experimental mode.
 
 The node devnet command suite provides a collection of commands related to devnets.
-You can check the updated status by calling avalanche node status <clusterName>`,
+You can check the updated status by calling metal node status <clusterName>`,
 		RunE: cobrautils.CommandSuiteUsage,
 	}
 	// node devnet deploy

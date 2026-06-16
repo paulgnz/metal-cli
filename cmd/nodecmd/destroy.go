@@ -43,7 +43,7 @@ If there is a static IP address attached, it will be released.`,
 	cmd.Flags().BoolVar(&authorizeAccess, "authorize-access", false, "authorize CLI to release cloud resources")
 	cmd.Flags().BoolVar(&authorizeRemove, "authorize-remove", false, "authorize CLI to remove all local files related to cloud nodes")
 	cmd.Flags().BoolVarP(&authorizeAll, "authorize-all", "y", false, "authorize all CLI requests")
-	cmd.Flags().BoolVar(&destroyAll, "all", false, "destroy all existing clusters created by Avalanche CLI")
+	cmd.Flags().BoolVar(&destroyAll, "all", false, "destroy all existing clusters created by Metal CLI")
 	cmd.Flags().StringVar(&awsProfile, "aws-profile", constants.AWSDefaultCredential, "aws profile to use")
 
 	return cmd
@@ -80,7 +80,7 @@ func getDeleteConfigConfirmation() error {
 		return err
 	}
 	if !yes {
-		return errors.New("abort avalanche node destroy command")
+		return errors.New("abort metal node destroy command")
 	}
 	return nil
 }
@@ -136,14 +136,14 @@ func Cleanup() error {
 			}
 		}
 	}
-	ux.Logger.PrintToUser("all existing instances created by Avalanche CLI successfully destroyed")
+	ux.Logger.PrintToUser("all existing instances created by Metal CLI successfully destroyed")
 	return nil
 }
 
 func destroyNodes(_ *cobra.Command, args []string) error {
 	if len(args) == 0 {
 		if !destroyAll {
-			return fmt.Errorf("to destroy all existing clusters created by Avalanche CLI, call avalanche node destroy --all. To destroy a specified cluster, call avalanche node destroy CLUSTERNAME")
+			return fmt.Errorf("to destroy all existing clusters created by Metal CLI, call metal node destroy --all. To destroy a specified cluster, call metal node destroy CLUSTERNAME")
 		}
 		return Cleanup()
 	}

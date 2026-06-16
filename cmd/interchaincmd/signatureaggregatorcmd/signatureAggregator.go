@@ -10,7 +10,7 @@ import (
 
 var app *application.Avalanche
 
-// avalanche interchain signatureAggregator
+// metal interchain signatureAggregator
 func NewCmd(injectedApp *application.Avalanche) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "signatureAggregator",

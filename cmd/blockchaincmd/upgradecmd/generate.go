@@ -47,7 +47,7 @@ const (
 	RewardManager     = "Customize Fees Distribution"
 )
 
-// avalanche blockchain upgrade generate
+// metal blockchain upgrade generate
 func newUpgradeGenerateCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "generate [blockchainName]",
@@ -172,16 +172,16 @@ func writeUpgrade(blockchainName string, upgradeBytes []byte) error {
 func PrintHowToApplyConfChangesMessage(blockchainName string) {
 	ux.Logger.PrintToUser("")
 	ux.Logger.PrintToUser("To apply the change on Local Network:")
-	ux.Logger.PrintToUser("  avalanche network stop")
-	ux.Logger.PrintToUser("  avalanche network start")
+	ux.Logger.PrintToUser("  metal network stop")
+	ux.Logger.PrintToUser("  metal network start")
 	ux.Logger.PrintToUser("")
 	ux.Logger.PrintToUser("To apply the change to local validators on Fuji:")
-	ux.Logger.PrintToUser("  avalanche node local stop %s-local-node-fuji", blockchainName)
-	ux.Logger.PrintToUser("  avalanche node local start %s-local-start-fuji", blockchainName)
+	ux.Logger.PrintToUser("  metal node local stop %s-local-node-fuji", blockchainName)
+	ux.Logger.PrintToUser("  metal node local start %s-local-start-fuji", blockchainName)
 	ux.Logger.PrintToUser("")
 	ux.Logger.PrintToUser("To apply the change to local validators on Mainnet:")
-	ux.Logger.PrintToUser("  avalanche node local stop %s-local-node-mainnet", blockchainName)
-	ux.Logger.PrintToUser("  avalanche node local start %s-local-start-mainnet", blockchainName)
+	ux.Logger.PrintToUser("  metal node local stop %s-local-node-mainnet", blockchainName)
+	ux.Logger.PrintToUser("  metal node local start %s-local-start-mainnet", blockchainName)
 }
 
 func queryActivationTimestamp() (time.Time, error) {

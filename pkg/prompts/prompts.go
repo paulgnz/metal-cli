@@ -182,7 +182,7 @@ func GetKeyOrLedger(prompter Prompter, goal string, keyDir string, includeEwoq b
 	keyName, err := CaptureKeyName(prompter, goal, keyDir, includeEwoq)
 	if err != nil {
 		if errors.Is(err, errNoKeys) {
-			ux.Logger.PrintToUser("No private keys have been found. Create a new one with `avalanche key create`")
+			ux.Logger.PrintToUser("No private keys have been found. Create a new one with `metal key create`")
 		}
 		return false, "", err
 	}
@@ -272,7 +272,7 @@ func PromptChain(
 		return false, false, false, false, "", blockchainID, nil
 	}
 	if subnetOption == notListedOption {
-		ux.Logger.PrintToUser("Please import the blockchain first, using the `avalanche blockchain import` command suite")
+		ux.Logger.PrintToUser("Please import the blockchain first, using the `metal blockchain import` command suite")
 		return true, false, false, false, "", "", nil
 	}
 	switch subnetOption {
@@ -296,7 +296,7 @@ func PromptPrivateKey(
 	genesisPrivateKey string,
 ) (string, error) {
 	privateKey := ""
-	cliKeyOpt := "Get private key from an existing stored key (created from avalanche key create or avalanche key import)"
+	cliKeyOpt := "Get private key from an existing stored key (created from metal key create or metal key import)"
 	genesisKeyOpt := fmt.Sprintf("Use the private key of the Genesis Allocated address %s", genesisAddress)
 	keyOptions := []string{cliKeyOpt, Custom}
 	if genesisPrivateKey != "" {
@@ -342,7 +342,7 @@ func PromptAddress(
 	customPrompt string,
 ) (string, error) {
 	address := ""
-	cliKeyOpt := "Get address from an existing stored key (created from avalanche key create or avalanche key import)"
+	cliKeyOpt := "Get address from an existing stored key (created from metal key create or metal key import)"
 	genesisKeyOpt := fmt.Sprintf("Use the Genesis Allocated address %s", genesisAddress)
 	keyOptions := []string{cliKeyOpt, Custom}
 	if genesisAddress != "" {

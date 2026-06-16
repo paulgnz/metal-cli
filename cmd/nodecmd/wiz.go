@@ -173,7 +173,7 @@ func wiz(cmd *cobra.Command, args []string) error {
 		for range c {
 			if err := CallDestroyNode(clusterName); err != nil {
 				ux.Logger.RedXToUser("Unable to delete cluster %s due to %s", clusterName, err)
-				ux.Logger.RedXToUser("Please try again by calling avalanche node destroy %s", clusterName)
+				ux.Logger.RedXToUser("Please try again by calling metal node destroy %s", clusterName)
 			}
 			os.Exit(0)
 		}

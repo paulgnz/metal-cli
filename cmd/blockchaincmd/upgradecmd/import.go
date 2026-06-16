@@ -15,7 +15,7 @@ var upgradeBytesFilePath string
 
 const upgradeBytesFilePathKey = "upgrade-filepath"
 
-// avalanche blockchain upgrade import
+// metal blockchain upgrade import
 func newUpgradeImportCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "import [blockchainName]",

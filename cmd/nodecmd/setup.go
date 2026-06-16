@@ -123,7 +123,7 @@ func setup(hosts []*models.Host, avalancheGoVersion string, network models.Netwo
 	if wgResults.HasErrors() {
 		return fmt.Errorf("failed to deploy node(s) %s", wgResults.GetErrorHostMap())
 	} else {
-		ux.Logger.PrintToUser("%s", logging.Green.Wrap("AvalancheGo and Avalanche-CLI installed and node(s) are bootstrapping!"))
+		ux.Logger.PrintToUser("%s", logging.Green.Wrap("AvalancheGo and Metal CLI installed and node(s) are bootstrapping!"))
 	}
 	return nil
 }

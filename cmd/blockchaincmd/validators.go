@@ -20,7 +20,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche blockchain validators
+// metal blockchain validators
 func newValidatorsCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "validators [blockchainName]",

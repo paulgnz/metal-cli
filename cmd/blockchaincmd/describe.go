@@ -42,7 +42,7 @@ import (
 
 var printGenesisOnly bool
 
-// avalanche blockchain describe
+// metal blockchain describe
 func newDescribeCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "describe [blockchainName]",

@@ -15,7 +15,7 @@ import (
 
 var MigrateOutput string
 
-// avalanche config metrics migrate
+// metal config metrics migrate
 func newMigrateCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "migrate",

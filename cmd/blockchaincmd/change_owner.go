@@ -18,7 +18,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche blockchain changeOwner
+// metal blockchain changeOwner
 func newChangeOwnerCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "changeOwner [blockchainName]",

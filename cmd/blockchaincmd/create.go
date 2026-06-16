@@ -81,7 +81,7 @@ var (
 	errSOVFlagsOnly                               = errors.New("flags --proof-of-authority, --proof-of-stake, --poa-manager-owner --proxy-contract-owner are only applicable to Subnet Only Validator (SOV) blockchains")
 )
 
-// avalanche blockchain create
+// metal blockchain create
 func newCreateCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "create [blockchainName]",
@@ -478,7 +478,7 @@ func createBlockchainConfig(cmd *cobra.Command, args []string) error {
 		}
 	}
 	ux.Logger.GreenCheckmarkToUser("Successfully created blockchain configuration")
-	ux.Logger.PrintToUser("Run 'avalanche blockchain describe' to view all created addresses and what their roles are")
+	ux.Logger.PrintToUser("Run 'metal blockchain describe' to view all created addresses and what their roles are")
 	return nil
 }
 

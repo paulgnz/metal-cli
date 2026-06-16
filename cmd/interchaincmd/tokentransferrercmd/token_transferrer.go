@@ -10,7 +10,7 @@ import (
 
 var app *application.Avalanche
 
-// avalanche interchain tokenTransferrer
+// metal interchain tokenTransferrer
 func NewCmd(injectedApp *application.Avalanche) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "tokenTransferrer",

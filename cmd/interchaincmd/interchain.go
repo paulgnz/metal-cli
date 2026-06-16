@@ -14,7 +14,7 @@ import (
 
 var app *application.Avalanche
 
-// avalanche interchain
+// metal interchain
 func NewCmd(injectedApp *application.Avalanche) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "interchain",

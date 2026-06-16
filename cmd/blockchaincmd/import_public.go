@@ -38,7 +38,7 @@ var (
 	rpcURL          string
 )
 
-// avalanche blockchain import public
+// metal blockchain import public
 func newImportPublicCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "public [blockchainPath]",

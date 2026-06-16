@@ -39,7 +39,7 @@ var _ = ginkgo.Describe("[Node devnet]", func() {
 		gomega.Expect(err).Should(gomega.BeNil())
 		output := string(outputB)
 		fmt.Println(output)
-		gomega.Expect(output).To(gomega.ContainSubstring("AvalancheGo and Avalanche-CLI installed and node(s) are bootstrapping!"))
+		gomega.Expect(output).To(gomega.ContainSubstring("AvalancheGo and Metal CLI installed and node(s) are bootstrapping!"))
 		// parse hostName
 		// Parse validator node
 		re := regexp.MustCompile(`Cloud Instance ID: (\S+) \| Public IP: (\S+) \| NodeID-(\S+)`)

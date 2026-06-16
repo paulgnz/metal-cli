@@ -25,19 +25,19 @@ To get started, use the key create command.`,
 		RunE: cobrautils.CommandSuiteUsage,
 	}
 
-	// avalanche key create
+	// metal key create
 	cmd.AddCommand(newCreateCmd())
 
-	// avalanche key list
+	// metal key list
 	cmd.AddCommand(newListCmd())
 
-	// avalanche key delete
+	// metal key delete
 	cmd.AddCommand(newDeleteCmd())
 
-	// avalanche key export
+	// metal key export
 	cmd.AddCommand(newExportCmd())
 
-	// avalanche key transfer
+	// metal key transfer
 	cmd.AddCommand(newTransferCmd())
 
 	return cmd

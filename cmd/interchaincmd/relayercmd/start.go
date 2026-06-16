@@ -33,7 +33,7 @@ type StartFlags struct {
 
 var startFlags StartFlags
 
-// avalanche interchain relayer start
+// metal interchain relayer start
 func newStartCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "start",

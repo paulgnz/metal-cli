@@ -47,7 +47,7 @@ type BlockchainRemoveValidatorFlags struct {
 	SigAggFlags flags.SignatureAggregatorFlags
 }
 
-// avalanche blockchain removeValidator
+// metal blockchain removeValidator
 func newRemoveValidatorCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "removeValidator [blockchainName]",

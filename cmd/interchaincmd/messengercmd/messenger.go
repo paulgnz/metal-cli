@@ -10,7 +10,7 @@ import (
 
 var app *application.Avalanche
 
-// avalanche interchain messenger
+// metal interchain messenger
 func NewCmd(injectedApp *application.Avalanche) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "messenger",

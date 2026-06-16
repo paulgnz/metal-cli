@@ -358,7 +358,7 @@ func GetNetworkFromCmdLineFlags(
 		networkOption = NetworkOptionFromString(networkOptionStr)
 		if networkOption == Devnet && !onlyEndpointBasedDevnets && len(clusterNames) != 0 {
 			endpointOptions := []string{
-				"Get Devnet RPC endpoint from an existing node cluster (created from avalanche node create or avalanche devnet wiz)",
+				"Get Devnet RPC endpoint from an existing node cluster (created from metal node create or avalanche devnet wiz)",
 				"Custom",
 			}
 			if endpointOption, err := app.Prompt.CaptureList("What is the Devnet rpc Endpoint?", endpointOptions); err != nil {

@@ -23,7 +23,7 @@ var (
 	perNodeChainConf string
 )
 
-// avalanche blockchain configure
+// metal blockchain configure
 func newConfigureCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "configure [blockchainName]",

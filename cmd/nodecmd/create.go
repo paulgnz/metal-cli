@@ -87,7 +87,7 @@ walks you through all the steps you need to set up a validator.
 Once this command is completed, you will have to wait for the validator
 to finish bootstrapping on the primary network before running further
 commands on it, e.g. validating a Subnet. You can check the bootstrapping
-status by running avalanche node status 
+status by running metal node status 
 
 The created node will be part of group of validators called <clusterName> 
 and users can call node commands with <clusterName> so that the command
@@ -793,7 +793,7 @@ func createNodes(cmd *cobra.Command, args []string) error {
 			monitoringPublicIP = monitoringNodeConfig.PublicIPs[0]
 		}
 		printResults(cloudConfigMap, publicIPMap, monitoringPublicIP)
-		ux.Logger.PrintToUser("%s", logging.Green.Wrap("AvalancheGo and Avalanche-CLI installed and node(s) are bootstrapping!"))
+		ux.Logger.PrintToUser("%s", logging.Green.Wrap("AvalancheGo and Metal CLI installed and node(s) are bootstrapping!"))
 	}
 	sendNodeCreateMetrics(cloudService, network.Name(), numNodesMetricsMap)
 	return nil
@@ -1126,8 +1126,8 @@ func printResults(cloudConfigMap models.CloudConfig, publicIPMap map[string]stri
 	ux.Logger.PrintToUser("AVALANCHE NODE(S) SUCCESSFULLY SET UP!")
 	ux.Logger.PrintLineSeparator()
 	ux.Logger.PrintToUser("Please wait until the node(s) are successfully bootstrapped to run further commands on the node(s)")
-	ux.Logger.PrintToUser("You can check status of the node(s) using %s command", logging.LightBlue.Wrap("avalanche node status"))
-	ux.Logger.PrintToUser("Please use %s to ssh into the node(s). More details: %s", logging.LightBlue.Wrap("avalanche node ssh"), "https://docs.avax.network/tooling/cli-create-nodes/node-ssh")
+	ux.Logger.PrintToUser("You can check status of the node(s) using %s command", logging.LightBlue.Wrap("metal node status"))
+	ux.Logger.PrintToUser("Please use %s to ssh into the node(s). More details: %s", logging.LightBlue.Wrap("metal node ssh"), "https://docs.avax.network/tooling/cli-create-nodes/node-ssh")
 
 	for region, cloudConfig := range cloudConfigMap {
 		ux.Logger.PrintToUser(" ")
@@ -1217,12 +1217,12 @@ func waitForHosts(hosts []*models.Host) *models.NodeResults {
 
 // requestCloudAuth makes sure user agree to
 func requestCloudAuth(cloudName string) error {
-	ux.Logger.PrintToUser("Do you authorize Avalanche-CLI to access your %s account?", cloudName)
-	ux.Logger.PrintToUser("By clicking yes, you are authorizing Avalanche-CLI to:")
+	ux.Logger.PrintToUser("Do you authorize Metal CLI to access your %s account?", cloudName)
+	ux.Logger.PrintToUser("By clicking yes, you are authorizing Metal CLI to:")
 	ux.Logger.PrintToUser("- Create Cloud instance(s) and other components (such as elastic IPs)")
-	ux.Logger.PrintToUser("- Start/Stop Cloud instance(s) and other components (such as elastic IPs) previously created by Avalanche-CLI")
-	ux.Logger.PrintToUser("- Delete Cloud instance(s) and other components (such as elastic IPs) previously created by Avalanche-CLI")
-	yes, err := app.Prompt.CaptureYesNo(fmt.Sprintf("I authorize Avalanche-CLI to access my %s account", cloudName))
+	ux.Logger.PrintToUser("- Start/Stop Cloud instance(s) and other components (such as elastic IPs) previously created by Metal CLI")
+	ux.Logger.PrintToUser("- Delete Cloud instance(s) and other components (such as elastic IPs) previously created by Metal CLI")
+	yes, err := app.Prompt.CaptureYesNo(fmt.Sprintf("I authorize Metal CLI to access my %s account", cloudName))
 	if err != nil {
 		return err
 	}
@@ -1230,7 +1230,7 @@ func requestCloudAuth(cloudName string) error {
 		return err
 	}
 	if !yes {
-		return fmt.Errorf("user did not give authorization to Avalanche-CLI to access %s account", cloudName)
+		return fmt.Errorf("user did not give authorization to Metal CLI to access %s account", cloudName)
 	}
 	return nil
 }
@@ -1382,7 +1382,7 @@ func setSSHIdentity() (string, error) {
 	return strings.ReplaceAll(sshIdentity, yubikeyMark, ""), nil
 }
 
-// defaultAvalancheCLIPrefix returns the default Avalanche CLI prefix.
+// defaultAvalancheCLIPrefix returns the default Metal CLI prefix.
 func defaultAvalancheCLIPrefix(region string) (string, error) {
 	usr, err := user.Current()
 	if err != nil {

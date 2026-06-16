@@ -21,7 +21,7 @@ import (
 
 var deployed bool
 
-// avalanche blockchain list
+// metal blockchain list
 func newListCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "list",

@@ -39,7 +39,7 @@ type DeployValidatorManagerFlags struct {
 
 var deployValidatorManagerFlags DeployValidatorManagerFlags
 
-// avalanche contract deploy validatorManager
+// metal contract deploy validatorManager
 func newDeployValidatorManagerCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "validatorManager",
@@ -47,7 +47,7 @@ func newDeployValidatorManagerCmd() *cobra.Command {
 		Long: `Deploy a Validator Manager, a Proxy, and a Proxy Admin, into a given Network and Blockchain.
 If a proxy is provided, configures it to point to the deployed validator manager.
 Note: This command deploys smart contracts for a validator manager, but does not initialize it to start operating on a given
-L1. For that, you need to call 'avalanche contract initValidatorManager'.
+L1. For that, you need to call 'metal contract initValidatorManager'.
 `,
 		RunE: deployValidatorManager,
 		Args: cobrautils.ExactArgs(0),

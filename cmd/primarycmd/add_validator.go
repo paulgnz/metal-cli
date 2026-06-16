@@ -46,7 +46,7 @@ type jsonProofOfPossession struct {
 	ProofOfPossession string `json:"proofOfPossession"`
 }
 
-// avalanche primary addValidator
+// metal primary addValidator
 func newAddValidatorCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "addValidator",

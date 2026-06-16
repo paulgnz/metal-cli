@@ -35,7 +35,7 @@ var (
 	stakeAmount uint64
 )
 
-// avalanche blockchain join
+// metal blockchain join
 func newJoinCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "join [blockchainName]",
@@ -91,7 +91,7 @@ func joinCmd(_ *cobra.Command, args []string) error {
 	}
 
 	if sc.Sovereign {
-		return errors.New("avalanche blockchain join command cannot be used on sovereign blockchains")
+		return errors.New("metal blockchain join command cannot be used on sovereign blockchains")
 	}
 
 	network, err := networkoptions.GetNetworkFromCmdLineFlags(

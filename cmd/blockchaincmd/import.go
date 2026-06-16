@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche blockchain import
+// metal blockchain import
 func newImportCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "import",

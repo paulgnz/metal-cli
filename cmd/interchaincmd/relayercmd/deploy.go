@@ -49,7 +49,7 @@ const (
 	aproxFundingFee             = 0.01
 )
 
-// avalanche interchain relayer deploy
+// metal interchain relayer deploy
 func newDeployCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "deploy",

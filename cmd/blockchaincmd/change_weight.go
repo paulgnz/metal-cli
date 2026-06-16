@@ -44,7 +44,7 @@ type BlockchainChangeWeightFlags struct {
 	SigAggFlags flags.SignatureAggregatorFlags
 }
 
-// avalanche blockchain changeWeight
+// metal blockchain changeWeight
 func newChangeWeightCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "changeWeight [blockchainName]",

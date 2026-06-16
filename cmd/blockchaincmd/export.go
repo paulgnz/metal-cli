@@ -22,7 +22,7 @@ var (
 	customVMBuildScript string
 )
 
-// avalanche blockchain export
+// metal blockchain export
 func newExportCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "export [blockchainName]",

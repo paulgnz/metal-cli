@@ -35,7 +35,7 @@ var (
 	globalNetworkFlags networkoptions.NetworkFlags
 )
 
-// avalanche interchain relayer logs
+// metal interchain relayer logs
 func newLogsCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "logs",

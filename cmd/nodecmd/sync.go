@@ -15,7 +15,7 @@ func newSyncCmd() *cobra.Command {
 		Long: `(ALPHA Warning) This command is currently in experimental mode.
 
 The node sync command enables all nodes in a cluster to be bootstrapped to a Blockchain.
-You can check the blockchain bootstrap status by calling avalanche node status <clusterName> --blockchain <blockchainName>`,
+You can check the blockchain bootstrap status by calling metal node status <clusterName> --blockchain <blockchainName>`,
 		Args: cobrautils.ExactArgs(2),
 		RunE: syncSubnet,
 	}

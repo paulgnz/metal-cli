@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche node
+// metal node
 func NewCmd(injectedApp *application.Avalanche) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "node",

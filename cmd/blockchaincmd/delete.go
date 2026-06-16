@@ -13,7 +13,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche blockchain delete
+// metal blockchain delete
 func newDeleteCmd() *cobra.Command {
 	return &cobra.Command{
 		Use:   "delete [blockchainName]",

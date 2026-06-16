@@ -29,7 +29,7 @@ var (
 	ledgerAddresses []string
 )
 
-// avalanche transaction sign
+// metal transaction sign
 func newTransactionSignCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "sign [blockchainName]",

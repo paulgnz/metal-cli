@@ -26,7 +26,7 @@ type ListFlags struct {
 
 var listFlags ListFlags
 
-// avalanche interchain signatureAggregator list
+// metal interchain signatureAggregator list
 func newListCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "list",

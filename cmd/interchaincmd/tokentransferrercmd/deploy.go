@@ -57,7 +57,7 @@ type DeployFlags struct {
 
 var deployFlags DeployFlags
 
-// avalanche interchain tokenTransferrer deploy
+// metal interchain tokenTransferrer deploy
 func NewDeployCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "deploy",
@@ -475,9 +475,9 @@ func CallDeploy(_ []string, flags DeployFlags) error {
 			}
 			if !remoteManagedMinterManager {
 				if remoteMinterAdminFound {
-					ux.Logger.PrintToUser("no managed key found for native minter admin %s on %s. add a CLI key for it using 'avalanche key create --file'", remoteMinterAdminAddress, remoteBlockchainDesc)
+					ux.Logger.PrintToUser("no managed key found for native minter admin %s on %s. add a CLI key for it using 'metal key create --file'", remoteMinterAdminAddress, remoteBlockchainDesc)
 				}
-				return fmt.Errorf("no managed key found for native minter manager %s on %s. add a CLI key for it using 'avalanche key create --file'", remoteMinterManagerAddress, remoteBlockchainDesc)
+				return fmt.Errorf("no managed key found for native minter manager %s on %s. add a CLI key for it using 'metal key create --file'", remoteMinterManagerAddress, remoteBlockchainDesc)
 			}
 		} else {
 			remoteMinterManagerIsAdmin = true

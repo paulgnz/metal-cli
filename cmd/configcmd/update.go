@@ -11,7 +11,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche config metrics command
+// metal config metrics command
 func newUpdateCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "update [enable | disable]",
@@ -27,13 +27,13 @@ func newUpdateCmd() *cobra.Command {
 func handleUpdateSettings(_ *cobra.Command, args []string) error {
 	switch args[0] {
 	case constants.Enable:
-		ux.Logger.PrintToUser("Thank you for opting in Avalanche CLI automated update check")
+		ux.Logger.PrintToUser("Thank you for opting in Metal CLI automated update check")
 		err := saveUpdateDisabledPreferences(false)
 		if err != nil {
 			return err
 		}
 	case constants.Disable:
-		ux.Logger.PrintToUser("Avalanche CLI automated update check will no longer be performed")
+		ux.Logger.PrintToUser("Metal CLI automated update check will no longer be performed")
 		err := saveUpdateDisabledPreferences(true)
 		if err != nil {
 			return err

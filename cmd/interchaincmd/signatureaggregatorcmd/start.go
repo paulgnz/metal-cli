@@ -30,7 +30,7 @@ type StartFlags struct {
 
 var startFlags StartFlags
 
-// avalanche interchain signatureAggregator start
+// metal interchain signatureAggregator start
 func newStartCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "start",
@@ -64,7 +64,7 @@ func start(_ *cobra.Command, _ []string) error {
 			return err
 		}
 		if !isRunning {
-			return fmt.Errorf("unable to start local signature aggregator for local network as local network is not running. Run avalanche network start to start local networl")
+			return fmt.Errorf("unable to start local signature aggregator for local network as local network is not running. Run metal network start to start local networl")
 		}
 	}
 	signatureaggregatorExists, err := isThereExistingSignatureAggregator(network)
@@ -74,7 +74,7 @@ func start(_ *cobra.Command, _ []string) error {
 
 	if signatureaggregatorExists {
 		ux.Logger.PrintToUser("There is already a running signature aggregator instance locally for %s", network.Name())
-		ux.Logger.PrintToUser("To create a new signature aggregator instance, stop it first by calling `avalanche interchain signatureAggregator stop` command and run `avalanche interchain signatureAggregator start` again")
+		ux.Logger.PrintToUser("To create a new signature aggregator instance, stop it first by calling `metal interchain signatureAggregator stop` command and run `metal interchain signatureAggregator start` again")
 		return nil
 	}
 

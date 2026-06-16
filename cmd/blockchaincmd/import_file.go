@@ -15,7 +15,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche blockchain import file
+// metal blockchain import file
 func newImportFileCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "file [blockchainPath]",

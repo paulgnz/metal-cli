@@ -10,7 +10,7 @@ import (
 
 var app *application.Avalanche
 
-// avalanche blockchain vm
+// metal blockchain vm
 func NewCmd(injectedApp *application.Avalanche) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "transaction",

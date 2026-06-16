@@ -51,14 +51,14 @@ type BlockchainConvertFlags struct {
 	ConvertOnly             bool
 }
 
-// avalanche blockchain convert
+// metal blockchain convert
 func newConvertCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "convert [blockchainName]",
 		Short: "Converts a Subnet into a sovereign L1",
 		Long: `The blockchain convert command converts a Subnet into sovereign L1.
 
-Sovereign L1s require bootstrap validators. avalanche blockchain convert command gives the option of: 
+Sovereign L1s require bootstrap validators. metal blockchain convert command gives the option of: 
 - either using local machine as bootstrap validators (set the number of bootstrap validators using 
 --num-bootstrap-validators flag, default is set to 1)
 - or using remote nodes (we require the node's Node-ID and BLS info)`,
@@ -872,7 +872,7 @@ func printSuccessfulConvertOnlyOutput(blockchainName, subnetID string, generateN
 		ux.Logger.PrintToUser("- Create the corresponding Avalanche node(s) with the provided Node ID and BLS Info")
 	}
 	ux.Logger.PrintToUser("- Have the Avalanche node(s) track the blockchain")
-	ux.Logger.PrintToUser("- Call `avalanche contract initValidatorManager %s`", blockchainName)
+	ux.Logger.PrintToUser("- Call `metal contract initValidatorManager %s`", blockchainName)
 	ux.Logger.PrintToUser("==================================================")
 	if generateNodeID {
 		ux.Logger.PrintToUser("To create the Avalanche node(s) with the provided Node ID and BLS Info:")

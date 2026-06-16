@@ -11,7 +11,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche blockchain upgrade print
+// metal blockchain upgrade print
 func newUpgradePrintCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "print [blockchainName]",

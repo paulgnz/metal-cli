@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche contract deploy
+// metal contract deploy
 func newDeployCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "deploy",

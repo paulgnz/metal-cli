@@ -19,7 +19,7 @@ func GetKeyForChangeOwner(app *application.Avalanche, network models.Network) (s
 	changeAddrPrompt := "Which key would you like to set as change owner for leftover AVAX if the node is removed from validator set?"
 
 	const (
-		getFromStored = "Get address from an existing stored key (created from avalanche key create or avalanche key import)"
+		getFromStored = "Get address from an existing stored key (created from metal key create or metal key import)"
 		custom        = "Custom"
 	)
 

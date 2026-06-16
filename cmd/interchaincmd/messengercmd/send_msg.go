@@ -34,7 +34,7 @@ type MsgFlags struct {
 
 var msgFlags MsgFlags
 
-// avalanche interchain messenger sendMsg
+// metal interchain messenger sendMsg
 func NewSendMsgCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "sendMsg [sourceBlockchainName] [destinationBlockchainName] [messageContent]",

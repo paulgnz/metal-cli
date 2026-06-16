@@ -54,7 +54,7 @@ type ContractInitValidatorManagerFlags struct {
 	SigAggFlags flags.SignatureAggregatorFlags
 }
 
-// avalanche contract initValidatorManager
+// metal contract initValidatorManager
 func newInitValidatorManagerCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:     "initValidatorManager blockchainName",

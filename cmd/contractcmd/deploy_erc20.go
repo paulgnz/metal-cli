@@ -30,7 +30,7 @@ type DeployERC20Flags struct {
 
 var deployERC20Flags DeployERC20Flags
 
-// avalanche contract deploy erc20
+// metal contract deploy erc20
 func newDeployERC20Cmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "erc20",

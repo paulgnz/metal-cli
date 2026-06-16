@@ -37,9 +37,9 @@ The node validate subnet command enables all nodes in a cluster to be validators
 If the command is run before the nodes are Primary Network validators, the command will first
 make the nodes Primary Network validators before making them Subnet validators. 
 If The command is run before the nodes are bootstrapped on the Primary Network, the command will fail. 
-You can check the bootstrap status by calling avalanche node status <clusterName>
+You can check the bootstrap status by calling metal node status <clusterName>
 If The command is run before the nodes are synced to the subnet, the command will fail.
-You can check the subnet sync status by calling avalanche node status <clusterName> --subnet <subnetName>`,
+You can check the subnet sync status by calling metal node status <clusterName> --subnet <subnetName>`,
 		Args: cobrautils.ExactArgs(2),
 		RunE: validateSubnet,
 	}

@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// avalanche config snapshotsAutoSave command
+// metal config snapshotsAutoSave command
 func newSnapshotsAutoSaveCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "snapshotsAutoSave [enable | disable]",

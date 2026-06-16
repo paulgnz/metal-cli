@@ -13,7 +13,7 @@ import (
 
 var force bool
 
-// avalanche blockchain upgrade import
+// metal blockchain upgrade import
 func newUpgradeExportCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "export [blockchainName]",

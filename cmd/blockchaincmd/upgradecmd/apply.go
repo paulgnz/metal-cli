@@ -57,7 +57,7 @@ var (
 	print bool
 )
 
-// avalanche blockchain upgrade apply
+// metal blockchain upgrade apply
 func newUpgradeApplyCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "apply [blockchainName]",
@@ -332,7 +332,7 @@ func validateUpgrade(blockchainName, networkKey string, sc *models.Sidecar, skip
 	if err != nil {
 		if err == os.ErrNotExist {
 			ux.Logger.PrintToUser("No file with upgrade specs for the given blockchain has been found")
-			ux.Logger.PrintToUser("You may need to first create it with the `avalanche blockchain upgrade generate` command or import it")
+			ux.Logger.PrintToUser("You may need to first create it with the `metal blockchain upgrade generate` command or import it")
 			ux.Logger.PrintToUser("Aborting this command. No changes applied")
 		}
 		return nil, "", err

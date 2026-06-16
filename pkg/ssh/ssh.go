@@ -546,7 +546,7 @@ func RunSSHRenderAvagoAliasConfigFile(
 	return nil
 }
 
-// RunSSHRenderAvalancheNodeConfig renders avalanche node config to a remote host via SSH.
+// RunSSHRenderAvalancheNodeConfig renders metal node config to a remote host via SSH.
 func RunSSHRenderAvalancheNodeConfig(
 	app *application.Avalanche,
 	host *models.Host,

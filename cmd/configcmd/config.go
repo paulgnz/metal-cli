@@ -13,8 +13,8 @@ var app *application.Avalanche
 func NewCmd(injectedApp *application.Avalanche) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "config",
-		Short: "Modify configuration for Avalanche-CLI",
-		Long:  `Customize configuration for Avalanche-CLI`,
+		Short: "Modify configuration for Metal CLI",
+		Long:  `Customize configuration for Metal CLI`,
 		RunE:  cobrautils.CommandSuiteUsage,
 	}
 	app = injectedApp

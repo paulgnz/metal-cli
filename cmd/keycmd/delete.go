@@ -13,7 +13,7 @@ import (
 
 var forceDelete bool
 
-// avalanche key delete
+// metal key delete
 func newDeleteCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "delete [keyName]",

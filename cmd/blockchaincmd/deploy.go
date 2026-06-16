@@ -121,7 +121,7 @@ type BlockchainDeployFlags struct {
 	ConvertOnly             bool
 }
 
-// avalanche blockchain deploy
+// metal blockchain deploy
 func newDeployCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "deploy [blockchainName]",
@@ -130,22 +130,22 @@ func newDeployCmd() *cobra.Command {
 
 At the end of the call, the command prints the RPC URL you can use to interact with the L1 / Subnet.
 
-When deploying an L1, Avalanche-CLI lets you use your local machine as a bootstrap validator, so you don't need to run separate Avalanche nodes. 
+When deploying an L1, Metal CLI lets you use your local machine as a bootstrap validator, so you don't need to run separate Avalanche nodes. 
 This is controlled by the --use-local-machine flag (enabled by default on Local Network).
 
 If --use-local-machine is set to true: 
-- Avalanche-CLI will call CreateSubnetTx, CreateChainTx, ConvertSubnetToL1Tx, followed by syncing the local machine bootstrap validator to the L1 and initialize 
+- Metal CLI will call CreateSubnetTx, CreateChainTx, ConvertSubnetToL1Tx, followed by syncing the local machine bootstrap validator to the L1 and initialize 
 Validator Manager Contract on the L1
 
 If using your own Avalanche Nodes as bootstrap validators: 
-- Avalanche-CLI will call CreateSubnetTx, CreateChainTx, ConvertSubnetToL1Tx 
+- Metal CLI will call CreateSubnetTx, CreateChainTx, ConvertSubnetToL1Tx 
 - You will have to sync your bootstrap validators to the L1 
-- Next, Initialize Validator Manager contract on the L1 using avalanche contract initValidatorManager [L1_Name]
+- Next, Initialize Validator Manager contract on the L1 using metal contract initValidatorManager [L1_Name]
 
-Avalanche-CLI only supports deploying an individual Blockchain once per network. Subsequent
+Metal CLI only supports deploying an individual Blockchain once per network. Subsequent
 attempts to deploy the same Blockchain to the same network (Local Network, Fuji, Mainnet) aren't
 allowed. If you'd like to redeploy a Blockchain locally for testing, you must first call
-avalanche network clean to reset all deployed chain state. Subsequent local deploys
+metal network clean to reset all deployed chain state. Subsequent local deploys
 redeploy the chain with fresh state. You can deploy the same Blockchain to multiple networks,
 so you can take your locally tested Blockchain and deploy it on Fuji or Mainnet.`,
 		RunE:              deployBlockchain,
@@ -313,7 +313,7 @@ func checkSubnetEVMDefaultAddressNotInAlloc(network models.Network, chain string
 		allocAddressMap := genesis.Alloc
 		for address := range allocAddressMap {
 			if address.String() == vm.PrefundedEwoqAddress.String() {
-				return fmt.Errorf("can't airdrop to default address on public networks, please edit the genesis by calling `avalanche blockchain create %s --force`", chain)
+				return fmt.Errorf("can't airdrop to default address on public networks, please edit the genesis by calling `metal blockchain create %s --force`", chain)
 			}
 		}
 	}
@@ -1408,7 +1408,7 @@ func deployBlockchain(cmd *cobra.Command, args []string) error {
 		ux.Logger.PrintToUser("")
 		ux.Logger.PrintToUser("Relayer is not deployed due to: %v", relayerErr)
 		ux.Logger.PrintToUser("")
-		ux.Logger.PrintToUser("To deploy a local relayer later on, call `avalanche interchain relayer deploy`")
+		ux.Logger.PrintToUser("To deploy a local relayer later on, call `metal interchain relayer deploy`")
 		ux.Logger.PrintToUser("This does not affect L1 operations besides Interchain Messaging")
 	}
 
@@ -1578,9 +1578,9 @@ func PrintReadyToSignMsg(
 	ux.Logger.PrintToUser("Tx is fully signed, and ready to be committed")
 	ux.Logger.PrintToUser("")
 	ux.Logger.PrintToUser("Commit command:")
-	cmdLine := fmt.Sprintf("  avalanche transaction commit %s --input-tx-filepath %s", blockchainName, outputTxPath)
+	cmdLine := fmt.Sprintf("  metal transaction commit %s --input-tx-filepath %s", blockchainName, outputTxPath)
 	if blockchainName == "" {
-		cmdLine = fmt.Sprintf("  avalanche transaction commit --input-tx-filepath %s", outputTxPath)
+		cmdLine = fmt.Sprintf("  metal transaction commit --input-tx-filepath %s", outputTxPath)
 	}
 	ux.Logger.PrintToUser("%s", cmdLine)
 }
@@ -1600,9 +1600,9 @@ func PrintRemainingToSignMsg(
 		"and run the signing command, or send %q to another user for signing.", outputTxPath)
 	ux.Logger.PrintToUser("")
 	ux.Logger.PrintToUser("Signing command:")
-	cmdline := fmt.Sprintf("  avalanche transaction sign %s --input-tx-filepath %s", blockchainName, outputTxPath)
+	cmdline := fmt.Sprintf("  metal transaction sign %s --input-tx-filepath %s", blockchainName, outputTxPath)
 	if blockchainName == "" {
-		cmdline = fmt.Sprintf("  avalanche transaction sign --input-tx-filepath %s", outputTxPath)
+		cmdline = fmt.Sprintf("  metal transaction sign --input-tx-filepath %s", outputTxPath)
 	}
 	ux.Logger.PrintToUser("%s", cmdline)
 	ux.Logger.PrintToUser("")

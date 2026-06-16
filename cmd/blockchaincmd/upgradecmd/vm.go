@@ -41,7 +41,7 @@ var (
 	binaryPathArg string
 )
 
-// avalanche blockchain upgrade vm
+// metal blockchain upgrade vm
 func newUpgradeVMCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "vm [blockchainName]",

@@ -143,7 +143,7 @@ func getControlKeysForChangeOwner(network models.Network) ([]string, bool, error
 	moreKeysPrompt := "Which control keys would you like to set as the new blockchain owners?"
 
 	const (
-		getFromStored = "Get address from an existing stored key (created from avalanche key create or avalanche key import)"
+		getFromStored = "Get address from an existing stored key (created from metal key create or metal key import)"
 		custom        = "Custom"
 	)
 

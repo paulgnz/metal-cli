@@ -25,7 +25,7 @@ func newUpdateSubnetCmd() *cobra.Command {
 		Long: `(ALPHA Warning) This command is currently in experimental mode.
 
 The node update subnet command updates all nodes in a cluster with latest Subnet configuration and VM for custom VM.
-You can check the updated subnet bootstrap status by calling avalanche node status <clusterName> --subnet <subnetName>`,
+You can check the updated subnet bootstrap status by calling metal node status <clusterName> --subnet <subnetName>`,
 		Args: cobrautils.ExactArgs(2),
 		RunE: updateSubnet,
 	}
@@ -71,12 +71,12 @@ func updateSubnet(_ *cobra.Command, args []string) error {
 		return fmt.Errorf("node(s) %s failed to be updated for subnet %s", nonUpdatedNodes, subnetName)
 	}
 	ux.Logger.PrintToUser("Node(s) successfully updated for Subnet!")
-	ux.Logger.PrintToUser("%s", fmt.Sprintf("Check node subnet status with avalanche node status %s --subnet %s", clusterName, subnetName))
+	ux.Logger.PrintToUser("%s", fmt.Sprintf("Check node subnet status with metal node status %s --subnet %s", clusterName, subnetName))
 	return nil
 }
 
 // doUpdateSubnet exports deployed subnet in user's local machine to cloud server and calls node to
-// restart tracking the specified subnet (similar to avalanche blockchain join <subnetName> command)
+// restart tracking the specified subnet (similar to metal blockchain join <subnetName> command)
 func doUpdateSubnet(
 	hosts []*models.Host,
 	clusterName string,

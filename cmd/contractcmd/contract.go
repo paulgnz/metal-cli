@@ -10,7 +10,7 @@ import (
 
 var app *application.Avalanche
 
-// avalanche contract
+// metal contract
 func NewCmd(injectedApp *application.Avalanche) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "contract",

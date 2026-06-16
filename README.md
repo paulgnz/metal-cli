@@ -1,15 +1,29 @@
-# Avalanche-CLI
+# Metal CLI
 
-> **Maintenance Mode Notice**
->
-> As of December 2025, Avalanche CLI has entered maintenance mode. This means:
-> - No new features will be developed by the Ava Labs team
-> - Only security patches and critical bug fixes will be addressed
-> - GitHub issues are expected to be addressed by community members
->
-> **External contributions are very much welcome!** PRs will be reviewed but may not be prioritized. We encourage the community to continue building and improving this project.
+**A first-class command-line tool for operating [Metal Blockchain](https://metalblockchain.org).**
+A maintained fork of [`ava-labs/avalanche-cli`](https://github.com/ava-labs/avalanche-cli) **v1.9.6**, re-pointed at Metal (Tahoe testnet + Metal mainnet) with Metal address formatting.
 
-Avalanche CLI is a command line tool that gives developers access to everything Avalanche. This release specializes in helping developers develop and test L1s.
+> **Why a fork?** Upstream avalanche-cli entered **maintenance mode** (Dec 2025) — Ava Labs moved interactive L1 workflows to the web Builders Hub / Console. The earlier Metal fork (`MetalBlockchain/metal-cli`) is stuck pre-Etna (v1.0.9, Jun 2024). `metal-cli` is forked fresh from post-Etna **v1.9.6** (which has ACP-77 `blockchain convert`) and rebranded for Metal.
+
+## Scope & limitations  ⚠️ read this first
+
+`metal-cli` owns the **headless / scripting / CI / BP-onboarding** niche — what a web console can't do. For *interactive* L1 creation + ValidatorManager management, the modern UX is the web Builders Hub (a Metal fork of that is the companion tool).
+
+**Works against Metal today:**
+- `metal key …` — keys + addresses with Metal HRP (`P-metal…` / `P-tahoe…`). ✅
+- `--mainnet` → `api.metalblockchain.org` (networkID 1) · `--testnet` → `tahoe.metalblockchain.org` (networkID 5) · or any `--endpoint`. ✅
+- `metal blockchain …` deploy / describe / **convert** (ACP-77 subnet→L1 + ValidatorManager) against a live Metal network. ✅ — the reason we forked v1.9.6.
+
+**Known limitations (cosmetic / not-yet-Metal):**
+- ⚠️ **`metal node` / `metal network` *local* commands still fetch `avalanchego`** from `ava-labs/avalanchego` releases, not `metalgo` from `MetalBlockchain/metalgo`. Local-node / local-network orchestration is therefore **not Metal-native yet**. Live-network ops via `--endpoint` are unaffected.
+- The internal network kind for id 5 is still named **"Fuji"** in code (renaming touches network-matching logic in ~8 files); `--testnet`/`--fuji` both resolve to **Metal Tahoe**.
+- Residual Avalanche-isms remain (config dir `~/.avalanche-cli`, `AVAX` symbol strings, some help copy) — functional, just not fully rebranded.
+
+**Production note:** the migration's programmatic votes→validator-set pipeline goes through the SDKs (metalgojs / avalanche-tooling-sdk-go), not this CLI.
+
+---
+
+Metal CLI gives operators and developers access to everything Metal Blockchain. This release specializes in deploying and operating L1s on Metal. *(Community fork; upstream avalanche-cli is in maintenance mode as of Dec 2025 — external contributions welcome.)*
 
 ## Installation
 

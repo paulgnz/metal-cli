@@ -31,7 +31,7 @@ func NewCmd(injectedApp *application.Avalanche, version string) *cobra.Command {
 	app = injectedApp
 	cmd := &cobra.Command{
 		Use:     "update",
-		Short:   "Check for latest updates of Avalanche-CLI",
+		Short:   "Check for latest updates of Metal CLI",
 		Long:    `Check if an update is available, and prompt the user to install it`,
 		RunE:    runUpdate,
 		Args:    cobrautils.ExactArgs(0),
@@ -93,7 +93,7 @@ func Update(cmd *cobra.Command, isUserCalled bool, version string, lastActs *app
 
 	// flag not provided
 	if !yes {
-		ux.Logger.PrintToUser("We found a new version of Avalanche-CLI %s upstream. You are running %s", latest, thisVFmt)
+		ux.Logger.PrintToUser("We found a new version of Metal CLI %s upstream. You are running %s", latest, thisVFmt)
 		y, err := app.Prompt.CaptureYesNo("Do you want to update?")
 		if err != nil {
 			return nil

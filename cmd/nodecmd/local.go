@@ -76,7 +76,7 @@ var (
 func newLocalCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "local",
-		Short: "Suite of commands for a local avalanche node",
+		Short: "Suite of commands for a local metal node",
 		Long:  `The node local command suite provides a collection of commands related to local nodes`,
 		RunE:  cobrautils.CommandSuiteUsage,
 	}
@@ -105,7 +105,7 @@ Once this command is completed, you will have to wait for the Avalanche node
 to finish bootstrapping on the primary network before running further
 commands on it, e.g. validating a Subnet. 
 
-You can check the bootstrapping status by running avalanche node status local.
+You can check the bootstrapping status by running metal node status local.
 `,
 		Args:              cobra.ExactArgs(1),
 		RunE:              localStartNode,
@@ -403,7 +403,7 @@ func localValidate(_ *cobra.Command, args []string) error {
 	}
 
 	if !localnet.LocalClusterExists(app, clusterName) {
-		return fmt.Errorf("local cluster %q not found, please create it first using avalanche node local start %q", clusterName, clusterName)
+		return fmt.Errorf("local cluster %q not found, please create it first using metal node local start %q", clusterName, clusterName)
 	}
 
 	network, err := networkoptions.GetNetworkFromCmdLineFlags(

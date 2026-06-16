@@ -42,7 +42,7 @@ var _ = ginkgo.Describe("[Node create]", func() {
 	ginkgo.It("can create a node", func() {
 		output := commands.NodeCreate(network, avalanchegoVersion, numNodes, false, 0, commands.ExpectSuccess)
 		fmt.Println(output)
-		gomega.Expect(output).To(gomega.ContainSubstring("AvalancheGo and Avalanche-CLI installed and node(s) are bootstrapping!"))
+		gomega.Expect(output).To(gomega.ContainSubstring("AvalancheGo and Metal CLI installed and node(s) are bootstrapping!"))
 		// parse hostName
 		re := regexp.MustCompile(`Generated staking keys for host (\S+)\[NodeID-(\S+)\]`)
 		match := re.FindStringSubmatch(output)

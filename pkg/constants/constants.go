@@ -281,10 +281,10 @@ const (
 	MetricsCustomVMBuildScript  = "custom-vm-build-script"
 	MetricsCalledFromWiz        = "called-from-wiz"
 	MetricsNumRegions           = "num-region"
-	MetricsNodeCreateCommand    = "avalanche node create"
-	MetricsNodeDevnetWizCommand = "avalanche node devnet wiz"
-	MetricsSubnetDeployCommand  = "avalanche blockchain deploy"
-	MetricsSubnetCreateCommand  = "avalanche blockchain create"
+	MetricsNodeCreateCommand    = "metal node create"
+	MetricsNodeDevnetWizCommand = "metal node devnet wiz"
+	MetricsSubnetDeployCommand  = "metal blockchain deploy"
+	MetricsSubnetCreateCommand  = "metal blockchain create"
 	SubnetType                  = "subnet type"
 	PrecompileType              = "precompile type"
 	CustomAirdrop               = "custom-airdrop"
@@ -294,7 +294,7 @@ const (
 	PerNodeChainConfigFileName  = "per-node-chain.json"
 	NodeConfigFileName          = "node-config.json"
 
-	GitRepoCommitName  = "Avalanche-CLI"
+	GitRepoCommitName  = "Metal CLI"
 	GitRepoCommitEmail = "info@avax.network"
 	AvaLabsMaintainers = "ava-labs"
 

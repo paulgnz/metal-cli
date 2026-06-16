@@ -42,9 +42,9 @@ The node scp command securely copies files to and from nodes. Remote source or d
 File transfer to the nodes are parallelized. IF source or destination is cluster, the other should be a local file path. 
 If both destinations are remote, they must be nodes for the same cluster and not clusters themselves.
 For example:
-$ avalanche node scp [cluster1|node1]:/tmp/file.txt /tmp/file.txt
-$ avalanche node scp /tmp/file.txt [cluster1|NodeID-XXXX]:/tmp/file.txt
-$ avalanche node scp node1:/tmp/file.txt NodeID-XXXX:/tmp/file.txt
+$ metal node scp [cluster1|node1]:/tmp/file.txt /tmp/file.txt
+$ metal node scp /tmp/file.txt [cluster1|NodeID-XXXX]:/tmp/file.txt
+$ metal node scp node1:/tmp/file.txt NodeID-XXXX:/tmp/file.txt
 `,
 		Args: cobrautils.MinimumNArgs(2),
 		RunE: scpNode,

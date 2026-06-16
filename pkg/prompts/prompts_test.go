@@ -23,8 +23,8 @@ import (
 )
 
 const (
-	cliKeyOpt       = "Get private key from an existing stored key (created from avalanche key create or avalanche key import)"
-	cliAddrOpt      = "Get address from an existing stored key (created from avalanche key create or avalanche key import)"
+	cliKeyOpt       = "Get private key from an existing stored key (created from metal key create or metal key import)"
+	cliAddrOpt      = "Get address from an existing stored key (created from metal key create or metal key import)"
 	testTransaction = "test transaction"
 )
 

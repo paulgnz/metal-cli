@@ -81,7 +81,7 @@ const (
 	validatorWeightFlag = "weight"
 )
 
-// avalanche blockchain addValidator
+// metal blockchain addValidator
 func newAddValidatorCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "addValidator [blockchainName]",

@@ -40,7 +40,7 @@ func newUpgradeCmd() *cobra.Command {
 The node update command suite provides a collection of commands for nodes to update
 their avalanchego or VM version.
 
-You can check the status after upgrade by calling avalanche node status`,
+You can check the status after upgrade by calling metal node status`,
 		Args: cobrautils.ExactArgs(1),
 		RunE: upgrade,
 	}

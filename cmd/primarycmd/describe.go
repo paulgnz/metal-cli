@@ -34,7 +34,7 @@ const art = `
   \_____|     \_____|_| |_|\__,_|_|_| |_| |_|   \__,_|_|  \__,_|_| |_| |_|___/
 `
 
-// avalanche primary describe
+// metal primary describe
 func newDescribeCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "describe",
