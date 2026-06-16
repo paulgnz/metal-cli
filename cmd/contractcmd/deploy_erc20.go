@@ -5,11 +5,11 @@ package contractcmd
 import (
 	"math/big"
 
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
-	"github.com/ava-labs/avalanche-cli/pkg/contract"
-	"github.com/ava-labs/avalanche-cli/pkg/networkoptions"
-	"github.com/ava-labs/avalanche-cli/pkg/prompts"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/pkg/contract"
+	"github.com/paulgnz/metal-cli/pkg/networkoptions"
+	"github.com/paulgnz/metal-cli/pkg/prompts"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	"github.com/ava-labs/avalanche-tooling-sdk-go/evm"
 	"github.com/ava-labs/avalanchego/utils/logging"
 	"github.com/ava-labs/libevm/common"

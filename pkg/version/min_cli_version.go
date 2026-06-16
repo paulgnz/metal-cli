@@ -10,8 +10,8 @@ import (
 
 	"golang.org/x/mod/semver"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/constants"
 )
 
 type CLIMinVersionMap struct {

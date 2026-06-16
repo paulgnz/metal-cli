@@ -9,7 +9,7 @@ metadata:
     source on GitHub.
   annotations:
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: ava-labs/avalanche-cli
+    github.com/project-slug: paulgnz/metal-cli
 spec:
   type: service
   owner: platform-tooling

@@ -8,9 +8,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/utils"
 )
 
 // Local network metadata keeps reference to the tmpnet directory

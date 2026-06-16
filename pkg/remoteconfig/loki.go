@@ -4,7 +4,7 @@
 package remoteconfig
 
 import (
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/utils"
 )
 
 func LokiFoldersToCreate() []string {

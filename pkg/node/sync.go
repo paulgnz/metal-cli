@@ -8,13 +8,13 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ava-labs/avalanche-cli/pkg/ansible"
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/ssh"
-	"github.com/ava-labs/avalanche-cli/pkg/subnet"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/ansible"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/ssh"
+	"github.com/paulgnz/metal-cli/pkg/subnet"
+	"github.com/paulgnz/metal-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	"github.com/ava-labs/avalanchego/utils/set"
 )
 

@@ -5,14 +5,14 @@ package mocks
 import (
 	big "math/big"
 
-	comparator "github.com/ava-labs/avalanche-cli/pkg/prompts/comparator"
+	comparator "github.com/paulgnz/metal-cli/pkg/prompts/comparator"
 	common "github.com/ava-labs/libevm/common"
 
 	ids "github.com/ava-labs/avalanchego/ids"
 
 	mock "github.com/stretchr/testify/mock"
 
-	models "github.com/ava-labs/avalanche-cli/pkg/models"
+	models "github.com/paulgnz/metal-cli/pkg/models"
 
 	time "time"
 

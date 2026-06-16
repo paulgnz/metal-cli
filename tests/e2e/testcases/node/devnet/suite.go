@@ -12,9 +12,9 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/tests/e2e/commands"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/tests/e2e/commands"
 	ginkgo "github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 	"github.com/pborman/ansi"

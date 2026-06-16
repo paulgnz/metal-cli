@@ -7,12 +7,12 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/key"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/key"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	"github.com/ava-labs/avalanche-tooling-sdk-go/evm"
 	"github.com/ava-labs/avalanche-tooling-sdk-go/interchain/icm"
 )

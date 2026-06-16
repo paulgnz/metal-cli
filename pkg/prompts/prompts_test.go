@@ -11,9 +11,9 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/pkg/key"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/prompts/mocks"
+	"github.com/paulgnz/metal-cli/pkg/key"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/prompts/mocks"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/crypto"
 

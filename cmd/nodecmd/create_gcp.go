@@ -12,17 +12,17 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/utils"
 	sdkutils "github.com/ava-labs/avalanche-tooling-sdk-go/utils"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/compute/v1"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/constants"
 
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/models"
 
-	gcpAPI "github.com/ava-labs/avalanche-cli/pkg/cloud/gcp"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	gcpAPI "github.com/paulgnz/metal-cli/pkg/cloud/gcp"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 )
 
 func getServiceAccountKeyFilepath() (string, error) {

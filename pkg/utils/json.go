@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/constants"
 )
 
 // ValidateJSON takes a json string and returns it's byte representation

@@ -8,10 +8,10 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/ava-labs/avalanche-cli/pkg/key"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/key"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	sdkutils "github.com/ava-labs/avalanche-tooling-sdk-go/utils"
 
 	"github.com/spf13/cobra"

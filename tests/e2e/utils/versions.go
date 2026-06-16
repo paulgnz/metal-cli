@@ -10,11 +10,11 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/binutils"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/dependencies"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/binutils"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/dependencies"
+	"github.com/paulgnz/metal-cli/pkg/models"
 	"github.com/ava-labs/avalanchego/utils/logging"
 
 	"golang.org/x/mod/semver"

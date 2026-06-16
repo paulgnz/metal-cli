@@ -6,7 +6,7 @@ import (
 	_ "embed"
 	"fmt"
 
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/models"
 	"github.com/ava-labs/avalanchego/ids"
 )
 

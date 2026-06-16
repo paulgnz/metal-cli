@@ -60,7 +60,7 @@ ifndef DOCKER
 endif
 
 docker-build: docker ## Build docker image
-	docker build . -t avalanche-cli
+	docker build . -t metal-cli
 
 docker-e2e-build: docker build ## Build docker image for e2e
-	docker build -f Dockerfile.release ./bin -t avalanche-cli
+	docker build -f Dockerfile.release ./bin -t metal-cli

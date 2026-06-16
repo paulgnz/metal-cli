@@ -4,7 +4,7 @@
 package commands
 
 import (
-	"github.com/ava-labs/avalanche-cli/tests/e2e/utils"
+	"github.com/paulgnz/metal-cli/tests/e2e/utils"
 )
 
 /* #nosec G204 */

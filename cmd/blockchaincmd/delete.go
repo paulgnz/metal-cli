@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
-	"github.com/ava-labs/avalanche-cli/pkg/subnet"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/pkg/subnet"
 	"github.com/ava-labs/avalanche-tooling-sdk-go/utils"
 	"github.com/spf13/cobra"
 )
@@ -63,7 +63,7 @@ func CallDeleteBlockchain(blockchainName string) error {
 	// is an APM subnet. We can't naively delete the binary because it
 	// may be used by multiple subnets. We should delete this binary,
 	// but only if no other subnet is using it.
-	// More info: https://github.com/ava-labs/avalanche-cli/issues/246
+	// More info: https://github.com/paulgnz/metal-cli/issues/246
 
 	// rm blockchain conf dir
 	subnetDir := filepath.Join(app.GetSubnetDir(), blockchainName)

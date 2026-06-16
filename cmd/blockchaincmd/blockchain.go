@@ -3,9 +3,9 @@
 package blockchaincmd
 
 import (
-	"github.com/ava-labs/avalanche-cli/cmd/blockchaincmd/upgradecmd"
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/cmd/blockchaincmd/upgradecmd"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
 	"github.com/spf13/cobra"
 )
 

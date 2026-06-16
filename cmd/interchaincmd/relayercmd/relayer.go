@@ -3,8 +3,8 @@
 package relayercmd
 
 import (
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
 	"github.com/spf13/cobra"
 )
 

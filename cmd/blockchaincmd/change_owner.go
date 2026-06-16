@@ -5,14 +5,14 @@ package blockchaincmd
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
-	"github.com/ava-labs/avalanche-cli/pkg/keychain"
-	"github.com/ava-labs/avalanche-cli/pkg/networkoptions"
-	"github.com/ava-labs/avalanche-cli/pkg/prompts"
-	"github.com/ava-labs/avalanche-cli/pkg/subnet"
-	"github.com/ava-labs/avalanche-cli/pkg/txutils"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/pkg/keychain"
+	"github.com/paulgnz/metal-cli/pkg/networkoptions"
+	"github.com/paulgnz/metal-cli/pkg/prompts"
+	"github.com/paulgnz/metal-cli/pkg/subnet"
+	"github.com/paulgnz/metal-cli/pkg/txutils"
+	"github.com/paulgnz/metal-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	"github.com/ava-labs/avalanchego/ids"
 
 	"github.com/spf13/cobra"

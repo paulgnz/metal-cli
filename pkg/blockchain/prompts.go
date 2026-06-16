@@ -3,10 +3,10 @@
 package blockchain
 
 import (
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/prompts"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/prompts"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 )
 
 func PromptValidatorBalance(app *application.Avalanche, availableBalance float64, prompt string) (float64, error) {

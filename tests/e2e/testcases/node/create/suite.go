@@ -13,11 +13,11 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/tests/e2e/commands"
-	e2eUtils "github.com/ava-labs/avalanche-cli/tests/e2e/utils"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/tests/e2e/commands"
+	e2eUtils "github.com/paulgnz/metal-cli/tests/e2e/utils"
 	ginkgo "github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
 )

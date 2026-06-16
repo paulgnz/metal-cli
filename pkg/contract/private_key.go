@@ -5,9 +5,9 @@ package contract
 import (
 	"fmt"
 
-	cmdflags "github.com/ava-labs/avalanche-cli/cmd/flags"
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	cmdflags "github.com/paulgnz/metal-cli/cmd/flags"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/models"
 
 	"github.com/spf13/cobra"
 )

@@ -6,7 +6,7 @@ package models
 import (
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/utils"
 
 	"github.com/stretchr/testify/require"
 )

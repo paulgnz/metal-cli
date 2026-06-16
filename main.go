@@ -3,7 +3,7 @@
 package main
 
 import (
-	"github.com/ava-labs/avalanche-cli/cmd"
+	"github.com/paulgnz/metal-cli/cmd"
 )
 
 func main() {

@@ -8,19 +8,19 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/ava-labs/avalanche-cli/pkg/dependencies"
+	"github.com/paulgnz/metal-cli/pkg/dependencies"
 
-	"github.com/ava-labs/avalanche-cli/pkg/prompts"
+	"github.com/paulgnz/metal-cli/pkg/prompts"
 
-	"github.com/ava-labs/avalanche-cli/pkg/docker"
+	"github.com/paulgnz/metal-cli/pkg/docker"
 
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/networkoptions"
-	"github.com/ava-labs/avalanche-cli/pkg/ssh"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/networkoptions"
+	"github.com/paulgnz/metal-cli/pkg/ssh"
+	"github.com/paulgnz/metal-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	"github.com/ava-labs/avalanchego/utils/logging"
 	"github.com/spf13/cobra"
 )

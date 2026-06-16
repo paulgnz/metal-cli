@@ -5,7 +5,7 @@ package networkoptions
 import (
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/models"
 	"github.com/stretchr/testify/require"
 )
 

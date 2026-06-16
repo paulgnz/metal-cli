@@ -3,12 +3,12 @@
 package interchaincmd
 
 import (
-	"github.com/ava-labs/avalanche-cli/cmd/interchaincmd/messengercmd"
-	"github.com/ava-labs/avalanche-cli/cmd/interchaincmd/relayercmd"
-	"github.com/ava-labs/avalanche-cli/cmd/interchaincmd/signatureaggregatorcmd"
-	"github.com/ava-labs/avalanche-cli/cmd/interchaincmd/tokentransferrercmd"
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/cmd/interchaincmd/messengercmd"
+	"github.com/paulgnz/metal-cli/cmd/interchaincmd/relayercmd"
+	"github.com/paulgnz/metal-cli/cmd/interchaincmd/signatureaggregatorcmd"
+	"github.com/paulgnz/metal-cli/cmd/interchaincmd/tokentransferrercmd"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
 	"github.com/spf13/cobra"
 )
 

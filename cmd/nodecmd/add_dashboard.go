@@ -3,9 +3,9 @@
 package nodecmd
 
 import (
-	"github.com/ava-labs/avalanche-cli/pkg/ansible"
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
-	"github.com/ava-labs/avalanche-cli/pkg/ssh"
+	"github.com/paulgnz/metal-cli/pkg/ansible"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/pkg/ssh"
 	"github.com/spf13/cobra"
 )
 

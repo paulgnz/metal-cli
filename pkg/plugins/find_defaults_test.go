@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/constants"
 	"github.com/ava-labs/avalanchego/config"
 	"github.com/stretchr/testify/require"
 )

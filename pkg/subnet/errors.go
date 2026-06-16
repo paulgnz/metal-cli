@@ -11,7 +11,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	"github.com/ava-labs/avalanchego/utils/logging"
 )
 

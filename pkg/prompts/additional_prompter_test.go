@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/prompts/comparator"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/prompts/comparator"
 	"github.com/manifoldco/promptui"
 	"github.com/stretchr/testify/require"
 )
@@ -2899,9 +2899,9 @@ func TestCaptureGitURLWithMonkeyPatch(t *testing.T) {
 		{
 			name:        "valid URL with path",
 			promptStr:   "Enter Git URL:",
-			mockReturn:  "https://github.com/ava-labs/avalanche-cli.git",
+			mockReturn:  "https://github.com/paulgnz/metal-cli.git",
 			mockError:   nil,
-			expectedURL: "https://github.com/ava-labs/avalanche-cli.git",
+			expectedURL: "https://github.com/paulgnz/metal-cli.git",
 			expectError: false,
 		},
 		{
@@ -3510,7 +3510,7 @@ func TestCaptureRepoFileWithMonkeyPatch(t *testing.T) {
 		{
 			name:          "empty string - validation fails",
 			promptStr:     "Enter file path:",
-			repo:          "https://github.com/ava-labs/avalanche-cli",
+			repo:          "https://github.com/paulgnz/metal-cli",
 			branch:        "main",
 			mockReturn:    "",
 			mockError:     nil,
@@ -3520,7 +3520,7 @@ func TestCaptureRepoFileWithMonkeyPatch(t *testing.T) {
 		{
 			name:          "prompt error - user cancelled",
 			promptStr:     "Enter file path:",
-			repo:          "https://github.com/ava-labs/avalanche-cli",
+			repo:          "https://github.com/paulgnz/metal-cli",
 			branch:        "main",
 			mockReturn:    "",
 			mockError:     fmt.Errorf("user cancelled"),
@@ -3530,7 +3530,7 @@ func TestCaptureRepoFileWithMonkeyPatch(t *testing.T) {
 		{
 			name:          "prompt error - interrupt",
 			promptStr:     "Enter file path:",
-			repo:          "https://github.com/ava-labs/avalanche-cli",
+			repo:          "https://github.com/paulgnz/metal-cli",
 			branch:        "main",
 			mockReturn:    "",
 			mockError:     fmt.Errorf("interrupt"),
@@ -3540,7 +3540,7 @@ func TestCaptureRepoFileWithMonkeyPatch(t *testing.T) {
 		{
 			name:          "ValidateRepoFile fails then succeeds",
 			promptStr:     "Enter file path:",
-			repo:          "https://github.com/ava-labs/avalanche-cli",
+			repo:          "https://github.com/paulgnz/metal-cli",
 			branch:        "main",
 			mockReturn:    "README.md", // Final valid response
 			mockError:     nil,
@@ -3665,7 +3665,7 @@ func TestCaptureRepoBranchWithMonkeyPatch(t *testing.T) {
 		{
 			name:          "empty string - validation fails",
 			promptStr:     "Enter branch:",
-			repo:          "https://github.com/ava-labs/avalanche-cli",
+			repo:          "https://github.com/paulgnz/metal-cli",
 			mockReturn:    "",
 			mockError:     nil,
 			expectError:   true,
@@ -3674,7 +3674,7 @@ func TestCaptureRepoBranchWithMonkeyPatch(t *testing.T) {
 		{
 			name:          "prompt error - user cancelled",
 			promptStr:     "Enter branch:",
-			repo:          "https://github.com/ava-labs/avalanche-cli",
+			repo:          "https://github.com/paulgnz/metal-cli",
 			mockReturn:    "",
 			mockError:     fmt.Errorf("user cancelled"),
 			expectError:   true,
@@ -3683,7 +3683,7 @@ func TestCaptureRepoBranchWithMonkeyPatch(t *testing.T) {
 		{
 			name:          "prompt error - interrupt",
 			promptStr:     "Enter branch:",
-			repo:          "https://github.com/ava-labs/avalanche-cli",
+			repo:          "https://github.com/paulgnz/metal-cli",
 			mockReturn:    "",
 			mockError:     fmt.Errorf("interrupt"),
 			expectError:   true,
@@ -3692,7 +3692,7 @@ func TestCaptureRepoBranchWithMonkeyPatch(t *testing.T) {
 		{
 			name:          "ValidateRepoBranch fails then succeeds",
 			promptStr:     "Enter branch:",
-			repo:          "https://github.com/ava-labs/avalanche-cli",
+			repo:          "https://github.com/paulgnz/metal-cli",
 			mockReturn:    "main", // Final valid response
 			mockError:     nil,
 			expectError:   false,
@@ -3862,7 +3862,7 @@ func TestCaptureURLWithMonkeyPatch(t *testing.T) {
 			name:               "ValidateURL fails then succeeds",
 			promptStr:          "Enter URL:",
 			validateConnection: true,
-			mockReturn:         "https://github.com/ava-labs/avalanche-cli",
+			mockReturn:         "https://github.com/paulgnz/metal-cli",
 			mockError:          nil,
 			expectError:        false,
 			errorContains:      "",

@@ -3,11 +3,11 @@
 package signatureaggregatorcmd
 
 import (
-	"github.com/ava-labs/avalanche-cli/pkg/signatureaggregator"
+	"github.com/paulgnz/metal-cli/pkg/signatureaggregator"
 
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
-	"github.com/ava-labs/avalanche-cli/pkg/networkoptions"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/pkg/networkoptions"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 
 	"github.com/spf13/cobra"
 )

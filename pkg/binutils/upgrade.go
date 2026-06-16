@@ -5,8 +5,8 @@ package binutils
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/models"
 )
 
 func UpgradeVM(app *application.Avalanche, vmID string, vmBinPath string) error {

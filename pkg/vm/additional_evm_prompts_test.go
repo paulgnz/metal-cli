@@ -7,10 +7,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/internal/mocks"
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	promptMocks "github.com/ava-labs/avalanche-cli/pkg/prompts/mocks"
+	"github.com/paulgnz/metal-cli/internal/mocks"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	promptMocks "github.com/paulgnz/metal-cli/pkg/prompts/mocks"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

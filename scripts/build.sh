@@ -37,4 +37,4 @@ then
 	extra_build_args+=" -cover"
 fi
 
-go build -v -ldflags="-X 'github.com/ava-labs/avalanche-cli/cmd.Version=$VERSION' -X github.com/ava-labs/avalanche-cli/pkg/metrics.telemetryToken=$AVALANCHE_CLI_METRICS_TOKEN" $extra_build_args -o $BIN
+go build -v -ldflags="-X 'github.com/paulgnz/metal-cli/cmd.Version=$VERSION' -X github.com/paulgnz/metal-cli/pkg/metrics.telemetryToken=$AVALANCHE_CLI_METRICS_TOKEN" $extra_build_args -o $BIN

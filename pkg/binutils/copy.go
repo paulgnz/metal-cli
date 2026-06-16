@@ -6,8 +6,8 @@ package binutils
 import (
 	"os"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/utils"
 )
 
 // CopyFile copies a file from src to dest and sets executable permissions.

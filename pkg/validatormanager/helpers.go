@@ -6,7 +6,7 @@ import (
 	"context"
 	"math/big"
 
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/utils"
 	"github.com/ava-labs/avalanche-tooling-sdk-go/evm"
 	"github.com/ava-labs/avalanchego/ids"
 	warpMessage "github.com/ava-labs/avalanchego/vms/platformvm/warp/message"

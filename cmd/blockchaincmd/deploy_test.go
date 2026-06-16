@@ -5,7 +5,7 @@ package blockchaincmd
 import (
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/cmd/flags"
+	"github.com/paulgnz/metal-cli/cmd/flags"
 	"github.com/stretchr/testify/require"
 )
 

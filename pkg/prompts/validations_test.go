@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/models"
 	"github.com/ava-labs/avalanchego/genesis"
 	"github.com/ava-labs/avalanchego/ids"
 	"github.com/stretchr/testify/require"
@@ -1612,7 +1612,7 @@ func TestRequestURL(t *testing.T) {
 	}{
 		{
 			name:    "valid URL - GitHub",
-			url:     "https://github.com/ava-labs/avalanche-cli",
+			url:     "https://github.com/paulgnz/metal-cli",
 			wantErr: false,
 		},
 		{
@@ -1627,7 +1627,7 @@ func TestRequestURL(t *testing.T) {
 		},
 		{
 			name:    "invalid URL - 404 page",
-			url:     "https://github.com/ava-labs/avalanche-cli/blob/main/nonexistent-file.txt",
+			url:     "https://github.com/paulgnz/metal-cli/blob/main/nonexistent-file.txt",
 			wantErr: true,
 		},
 		{
@@ -1671,7 +1671,7 @@ func TestValidateURL(t *testing.T) {
 	}{
 		{
 			name:    "valid URL - GitHub",
-			url:     "https://github.com/ava-labs/avalanche-cli",
+			url:     "https://github.com/paulgnz/metal-cli",
 			wantErr: false,
 		},
 		{
@@ -1691,7 +1691,7 @@ func TestValidateURL(t *testing.T) {
 		},
 		{
 			name:    "invalid URL - 404 page",
-			url:     "https://github.com/ava-labs/avalanche-cli/blob/main/nonexistent-file.txt",
+			url:     "https://github.com/paulgnz/metal-cli/blob/main/nonexistent-file.txt",
 			wantErr: true,
 		},
 		{
@@ -1722,13 +1722,13 @@ func TestValidateRepoBranch(t *testing.T) {
 	}{
 		{
 			name:    "valid repo and branch - avalanche-cli main",
-			repo:    "https://github.com/ava-labs/avalanche-cli",
+			repo:    "https://github.com/paulgnz/metal-cli",
 			branch:  "main",
 			wantErr: false,
 		},
 		{
 			name:    "valid repo but non-existent branch",
-			repo:    "https://github.com/ava-labs/avalanche-cli",
+			repo:    "https://github.com/paulgnz/metal-cli",
 			branch:  "nonexistent-branch-12345",
 			wantErr: true,
 		},
@@ -1752,7 +1752,7 @@ func TestValidateRepoBranch(t *testing.T) {
 		},
 		{
 			name:    "empty branch",
-			repo:    "https://github.com/ava-labs/avalanche-cli",
+			repo:    "https://github.com/paulgnz/metal-cli",
 			branch:  "",
 			wantErr: true,
 		},
@@ -1780,21 +1780,21 @@ func TestValidateRepoFile(t *testing.T) {
 	}{
 		{
 			name:    "valid repo, branch, and file",
-			repo:    "https://github.com/ava-labs/avalanche-cli",
+			repo:    "https://github.com/paulgnz/metal-cli",
 			branch:  "main",
 			file:    "README.md",
 			wantErr: false,
 		},
 		{
 			name:    "valid repo and branch but non-existent file",
-			repo:    "https://github.com/ava-labs/avalanche-cli",
+			repo:    "https://github.com/paulgnz/metal-cli",
 			branch:  "main",
 			file:    "nonexistent-file.txt",
 			wantErr: true,
 		},
 		{
 			name:    "valid repo but non-existent branch",
-			repo:    "https://github.com/ava-labs/avalanche-cli",
+			repo:    "https://github.com/paulgnz/metal-cli",
 			branch:  "nonexistent-branch",
 			file:    "README.md",
 			wantErr: true,
@@ -1822,21 +1822,21 @@ func TestValidateRepoFile(t *testing.T) {
 		},
 		{
 			name:    "empty branch",
-			repo:    "https://github.com/ava-labs/avalanche-cli",
+			repo:    "https://github.com/paulgnz/metal-cli",
 			branch:  "",
 			file:    "README.md",
 			wantErr: true,
 		},
 		{
 			name:    "empty file - GitHub handles gracefully",
-			repo:    "https://github.com/ava-labs/avalanche-cli",
+			repo:    "https://github.com/paulgnz/metal-cli",
 			branch:  "main",
 			file:    "",
 			wantErr: false, // GitHub redirects empty file to branch view
 		},
 		{
 			name:    "file in subdirectory",
-			repo:    "https://github.com/ava-labs/avalanche-cli",
+			repo:    "https://github.com/paulgnz/metal-cli",
 			branch:  "main",
 			file:    "cmd/root.go",
 			wantErr: false,

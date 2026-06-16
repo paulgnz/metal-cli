@@ -1,15 +1,15 @@
 # ref. https://goreleaser.com/customization/build/
 builds:
-  - id: avalanche-cli
+  - id: metal-cli
     main: ./main.go
-    binary: avalanche
+    binary: metal
     flags:
       - -v
     # windows is ignored by default, as the `goos` field by default only
     # contains linux and darwin
     ldflags:
-      - -X 'github.com/ava-labs/avalanche-cli/cmd.Version={{.Version}}'
-      - -X 'github.com/ava-labs/avalanche-cli/pkg/metrics.telemetryToken={{ .Env.AVALANCHE_CLI_METRICS_TOKEN }}'
+      - -X 'github.com/paulgnz/metal-cli/cmd.Version={{.Version}}'
+      - -X 'github.com/paulgnz/metal-cli/pkg/metrics.telemetryToken={{ .Env.AVALANCHE_CLI_METRICS_TOKEN }}'
     goos:
       - linux
       - darwin

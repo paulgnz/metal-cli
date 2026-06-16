@@ -1,4 +1,4 @@
-module github.com/ava-labs/avalanche-cli
+module github.com/paulgnz/metal-cli
 
 go 1.24.9
 

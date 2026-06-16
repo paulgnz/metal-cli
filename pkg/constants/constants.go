@@ -120,7 +120,7 @@ const (
 
 	ExtraLocalNetworkDataFilename = "extra-local-network-data.json"
 
-	CliInstallationURL         = "https://raw.githubusercontent.com/ava-labs/avalanche-cli/main/scripts/install.sh"
+	CliInstallationURL         = "https://raw.githubusercontent.com/paulgnz/metal-cli/main/scripts/install.sh"
 	EIPLimitErr                = "AddressLimitExceeded"
 	ErrReleasingGCPStaticIP    = "failed to release gcp static ip"
 	KeyDir                     = "key"
@@ -309,8 +309,8 @@ const (
 	SubnetEVMRPCCompatibilityURL = "https://raw.githubusercontent.com/ava-labs/subnet-evm/master/compatibility.json"
 	CLILatestDependencyFileName  = "latest.json"
 	CLIMinVersionFileName        = "min_cli_version.json"
-	CLILatestDependencyURL       = "https://raw.githubusercontent.com/ava-labs/avalanche-cli/main/versions/" + CLILatestDependencyFileName
-	CLIMinVersionURL             = "https://raw.githubusercontent.com/ava-labs/avalanche-cli/main/versions/" + CLIMinVersionFileName
+	CLILatestDependencyURL       = "https://raw.githubusercontent.com/paulgnz/metal-cli/main/versions/" + CLILatestDependencyFileName
+	CLIMinVersionURL             = "https://raw.githubusercontent.com/paulgnz/metal-cli/main/versions/" + CLIMinVersionFileName
 
 	YesLabel = "Yes"
 	NoLabel  = "No"

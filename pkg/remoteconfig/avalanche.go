@@ -9,7 +9,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/constants"
 )
 
 type AvalancheConfigInputs struct {

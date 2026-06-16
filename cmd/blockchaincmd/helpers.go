@@ -8,21 +8,21 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/ava-labs/avalanche-cli/cmd/flags"
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/contract"
-	"github.com/ava-labs/avalanche-cli/pkg/dependencies"
-	"github.com/ava-labs/avalanche-cli/pkg/keychain"
-	"github.com/ava-labs/avalanche-cli/pkg/localnet"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	"github.com/ava-labs/avalanche-cli/pkg/networkoptions"
-	"github.com/ava-labs/avalanche-cli/pkg/node"
-	"github.com/ava-labs/avalanche-cli/pkg/prompts"
-	"github.com/ava-labs/avalanche-cli/pkg/txutils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
-	"github.com/ava-labs/avalanche-cli/pkg/validatormanager"
-	"github.com/ava-labs/avalanche-cli/pkg/vm"
+	"github.com/paulgnz/metal-cli/cmd/flags"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/contract"
+	"github.com/paulgnz/metal-cli/pkg/dependencies"
+	"github.com/paulgnz/metal-cli/pkg/keychain"
+	"github.com/paulgnz/metal-cli/pkg/localnet"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/networkoptions"
+	"github.com/paulgnz/metal-cli/pkg/node"
+	"github.com/paulgnz/metal-cli/pkg/prompts"
+	"github.com/paulgnz/metal-cli/pkg/txutils"
+	"github.com/paulgnz/metal-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/validatormanager"
+	"github.com/paulgnz/metal-cli/pkg/vm"
 	"github.com/ava-labs/avalanche-tooling-sdk-go/evm"
 	contractSDK "github.com/ava-labs/avalanche-tooling-sdk-go/evm/contract"
 	sdkutils "github.com/ava-labs/avalanche-tooling-sdk-go/utils"
@@ -228,7 +228,7 @@ func StartLocalMachine(
 		avagoVersion := localMachineFlags.UserProvidedAvagoVersion
 		if localMachineFlags.UserProvidedAvagoVersion == constants.DefaultAvalancheGoVersion && localMachineFlags.AvagoBinaryPath == "" {
 			// nothing given: get avago version from RPC compat using latest.json defined in
-			// https://raw.githubusercontent.com/ava-labs/avalanche-cli/control-default-version/versions/latest.json
+			// https://raw.githubusercontent.com/paulgnz/metal-cli/control-default-version/versions/latest.json
 			avagoVersion, err = dependencies.GetLatestCLISupportedDependencyVersion(app, constants.AvalancheGoRepoName, network, &sidecar.RPCVersion)
 			if err != nil {
 				if err != dependencies.ErrNoAvagoVersion {

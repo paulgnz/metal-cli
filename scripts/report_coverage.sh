@@ -26,15 +26,15 @@ echo Covered functions: $covered_functions
 echo Coverage: $coverage
 
 cat profile.txt\
-	| grep -v github.com/ava-labs/avalanche-cli/cmd/nodecmd\
-	| grep -v github.com/ava-labs/avalanche-cli/pkg/node\
-	| grep -v github.com/ava-labs/avalanche-cli/pkg/cloud\
-	| grep -v github.com/ava-labs/avalanche-cli/pkg/models/host\
-	| grep -v github.com/ava-labs/avalanche-cli/pkg/ssh\
-	| grep -v github.com/ava-labs/avalanche-cli/pkg/docker\
-	| grep -v github.com/ava-labs/avalanche-cli/pkg/ansible > profile.tmp
-cat profile.txt | grep github.com/ava-labs/avalanche-cli/cmd/nodecmd/local.go >> profile.tmp
-cat profile.txt | grep github.com/ava-labs/avalanche-cli/pkg/node/local.go >> profile.tmp
+	| grep -v github.com/paulgnz/metal-cli/cmd/nodecmd\
+	| grep -v github.com/paulgnz/metal-cli/pkg/node\
+	| grep -v github.com/paulgnz/metal-cli/pkg/cloud\
+	| grep -v github.com/paulgnz/metal-cli/pkg/models/host\
+	| grep -v github.com/paulgnz/metal-cli/pkg/ssh\
+	| grep -v github.com/paulgnz/metal-cli/pkg/docker\
+	| grep -v github.com/paulgnz/metal-cli/pkg/ansible > profile.tmp
+cat profile.txt | grep github.com/paulgnz/metal-cli/cmd/nodecmd/local.go >> profile.tmp
+cat profile.txt | grep github.com/paulgnz/metal-cli/pkg/node/local.go >> profile.tmp
 mv profile.tmp profile.txt
 
 go tool cover -func profile.txt > coverage.txt
@@ -48,7 +48,7 @@ echo Total functions: $total_functions
 echo Covered functions: $covered_functions
 echo Coverage: $coverage
 
-cat profile.txt | grep -v github.com/ava-labs/avalanche-cli/sdk > profile.tmp
+cat profile.txt | grep -v github.com/paulgnz/metal-cli/sdk > profile.tmp
 mv profile.tmp profile.txt
 
 go tool cover -func profile.txt > coverage.txt

@@ -18,21 +18,21 @@ import (
 
 	"golang.org/x/mod/semver"
 
-	"github.com/ava-labs/avalanche-cli/cmd/flags"
+	"github.com/paulgnz/metal-cli/cmd/flags"
 
-	"github.com/ava-labs/avalanche-cli/pkg/dependencies"
+	"github.com/paulgnz/metal-cli/pkg/dependencies"
 
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/models"
 	basecfg "github.com/ava-labs/icm-services/config"
 	signatureAggregatorConfig "github.com/ava-labs/icm-services/signature-aggregator/config"
 
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/binutils"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/binutils"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	sdkutils "github.com/ava-labs/avalanche-tooling-sdk-go/utils"
 	"github.com/ava-labs/avalanchego/utils/logging"
 )

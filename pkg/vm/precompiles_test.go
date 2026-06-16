@@ -7,7 +7,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/internal/testutils"
+	"github.com/paulgnz/metal-cli/internal/testutils"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/subnet-evm/params/extras"
 	"github.com/ava-labs/subnet-evm/precompile/allowlist"

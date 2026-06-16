@@ -5,13 +5,13 @@ package nodecmd
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanche-cli/pkg/ansible"
-	awsAPI "github.com/ava-labs/avalanche-cli/pkg/cloud/aws"
-	gcpAPI "github.com/ava-labs/avalanche-cli/pkg/cloud/gcp"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
-	nodePkg "github.com/ava-labs/avalanche-cli/pkg/node"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/ansible"
+	awsAPI "github.com/paulgnz/metal-cli/pkg/cloud/aws"
+	gcpAPI "github.com/paulgnz/metal-cli/pkg/cloud/gcp"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/models"
+	nodePkg "github.com/paulgnz/metal-cli/pkg/node"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	sdkutils "github.com/ava-labs/avalanche-tooling-sdk-go/utils"
 )
 

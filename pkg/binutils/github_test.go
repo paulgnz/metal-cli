@@ -7,8 +7,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/internal/mocks"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/internal/mocks"
+	"github.com/paulgnz/metal-cli/pkg/constants"
 	"github.com/stretchr/testify/require"
 )
 

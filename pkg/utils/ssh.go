@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/constants"
 	"github.com/ava-labs/avalanche-tooling-sdk-go/utils"
 
 	"golang.org/x/crypto/ssh/agent"

@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	application "github.com/ava-labs/avalanche-cli/pkg/application"
+	application "github.com/paulgnz/metal-cli/pkg/application"
 	mock "github.com/stretchr/testify/mock"
 
 	time "time"

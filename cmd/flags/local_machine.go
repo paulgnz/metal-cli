@@ -5,7 +5,7 @@ package flags
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/constants"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

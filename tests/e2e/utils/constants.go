@@ -4,9 +4,9 @@
 package utils
 
 import (
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/localnet"
-	"github.com/ava-labs/avalanche-cli/pkg/models"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/localnet"
+	"github.com/paulgnz/metal-cli/pkg/models"
 )
 
 const (

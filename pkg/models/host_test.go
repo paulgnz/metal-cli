@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/utils"
 	oos "github.com/okteto/remote/pkg/os"
 	ossh "github.com/okteto/remote/pkg/ssh"
 	"github.com/stretchr/testify/require"

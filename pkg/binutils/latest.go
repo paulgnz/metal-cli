@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/ava-labs/avalanche-cli/pkg/prompts"
+	"github.com/paulgnz/metal-cli/pkg/prompts"
 	"github.com/ava-labs/avalanchego/utils/logging"
 	"github.com/ava-labs/avalanchego/utils/perms"
 	"go.uber.org/zap"

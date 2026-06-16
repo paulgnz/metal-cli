@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os/exec"
 
-	"github.com/ava-labs/avalanche-cli/cmd"
+	"github.com/paulgnz/metal-cli/cmd"
 	"golang.org/x/exp/maps"
 )
 

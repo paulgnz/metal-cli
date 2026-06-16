@@ -11,8 +11,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/prompts/mocks"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/prompts/mocks"
 	"github.com/ava-labs/libevm/common"
 	"github.com/olekukonko/tablewriter"
 	"github.com/stretchr/testify/require"

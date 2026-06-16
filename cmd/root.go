@@ -13,30 +13,30 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ava-labs/avalanche-cli/pkg/version"
+	"github.com/paulgnz/metal-cli/pkg/version"
 
-	"github.com/ava-labs/avalanche-cli/cmd/blockchaincmd"
-	"github.com/ava-labs/avalanche-cli/cmd/configcmd"
-	"github.com/ava-labs/avalanche-cli/cmd/contractcmd"
-	"github.com/ava-labs/avalanche-cli/cmd/interchaincmd"
-	"github.com/ava-labs/avalanche-cli/cmd/interchaincmd/messengercmd"
-	"github.com/ava-labs/avalanche-cli/cmd/interchaincmd/tokentransferrercmd"
-	"github.com/ava-labs/avalanche-cli/cmd/keycmd"
-	"github.com/ava-labs/avalanche-cli/cmd/networkcmd"
-	"github.com/ava-labs/avalanche-cli/cmd/nodecmd"
-	"github.com/ava-labs/avalanche-cli/cmd/primarycmd"
-	"github.com/ava-labs/avalanche-cli/cmd/transactioncmd"
-	"github.com/ava-labs/avalanche-cli/cmd/updatecmd"
-	"github.com/ava-labs/avalanche-cli/cmd/validatorcmd"
-	"github.com/ava-labs/avalanche-cli/internal/migrations"
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
-	"github.com/ava-labs/avalanche-cli/pkg/config"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/metrics"
-	"github.com/ava-labs/avalanche-cli/pkg/prompts"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/cmd/blockchaincmd"
+	"github.com/paulgnz/metal-cli/cmd/configcmd"
+	"github.com/paulgnz/metal-cli/cmd/contractcmd"
+	"github.com/paulgnz/metal-cli/cmd/interchaincmd"
+	"github.com/paulgnz/metal-cli/cmd/interchaincmd/messengercmd"
+	"github.com/paulgnz/metal-cli/cmd/interchaincmd/tokentransferrercmd"
+	"github.com/paulgnz/metal-cli/cmd/keycmd"
+	"github.com/paulgnz/metal-cli/cmd/networkcmd"
+	"github.com/paulgnz/metal-cli/cmd/nodecmd"
+	"github.com/paulgnz/metal-cli/cmd/primarycmd"
+	"github.com/paulgnz/metal-cli/cmd/transactioncmd"
+	"github.com/paulgnz/metal-cli/cmd/updatecmd"
+	"github.com/paulgnz/metal-cli/cmd/validatorcmd"
+	"github.com/paulgnz/metal-cli/internal/migrations"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/pkg/config"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/metrics"
+	"github.com/paulgnz/metal-cli/pkg/prompts"
+	"github.com/paulgnz/metal-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	"github.com/ava-labs/avalanchego/utils/logging"
 	"github.com/ava-labs/avalanchego/utils/perms"
 	ansi "github.com/k0kubun/go-ansi"
@@ -56,7 +56,7 @@ var (
 func NewRootCmd() *cobra.Command {
 	// rootCmd represents the base command when called without any subcommands
 	rootCmd := &cobra.Command{
-		Use: "avalanche",
+		Use: "metal",
 		Long: `Avalanche-CLI is a command-line tool that gives developers access to
 everything Avalanche. This release specializes in helping developers
 build and test Blockchain networks.

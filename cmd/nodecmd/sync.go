@@ -3,8 +3,8 @@
 package nodecmd
 
 import (
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
-	"github.com/ava-labs/avalanche-cli/pkg/node"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/pkg/node"
 	"github.com/spf13/cobra"
 )
 

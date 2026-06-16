@@ -8,14 +8,14 @@ import (
 	"os"
 	"strings"
 
-	nodePkg "github.com/ava-labs/avalanche-cli/pkg/node"
+	nodePkg "github.com/paulgnz/metal-cli/pkg/node"
 
-	awsAPI "github.com/ava-labs/avalanche-cli/pkg/cloud/aws"
-	gcpAPI "github.com/ava-labs/avalanche-cli/pkg/cloud/gcp"
-	"github.com/ava-labs/avalanche-cli/pkg/cobrautils"
-	"github.com/ava-labs/avalanche-cli/pkg/constants"
-	"github.com/ava-labs/avalanche-cli/pkg/utils"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	awsAPI "github.com/paulgnz/metal-cli/pkg/cloud/aws"
+	gcpAPI "github.com/paulgnz/metal-cli/pkg/cloud/gcp"
+	"github.com/paulgnz/metal-cli/pkg/cobrautils"
+	"github.com/paulgnz/metal-cli/pkg/constants"
+	"github.com/paulgnz/metal-cli/pkg/utils"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 	sdkutils "github.com/ava-labs/avalanche-tooling-sdk-go/utils"
 	"golang.org/x/exp/maps"
 

@@ -4,14 +4,14 @@ set -e
 usage() {
   this=$1
   cat <<EOF
-$this: download go binaries for ava-labs/avalanche-cli
+$this: download go binaries for paulgnz/metal-cli
 
 Usage: $this [-b] bindir [-d] [tag] [-c]
   -b sets bindir or installation directory, Defaults to ~/bin
   -c run the shell completions setup 
   -d turns on debug logging
    [tag] is a tag from
-   https://github.com/ava-labs/avalanche-cli/releases
+   https://github.com/paulgnz/metal-cli/releases
    If tag is missing, then the latest will be used.
 
 EOF

@@ -3,7 +3,7 @@
 
 package remoteconfig
 
-import "github.com/ava-labs/avalanche-cli/pkg/utils"
+import "github.com/paulgnz/metal-cli/pkg/utils"
 
 func RenderGrafanaLokiDataSourceConfig() ([]byte, error) {
 	return templates.ReadFile("templates/grafana-loki-datasource.yaml")

@@ -4,9 +4,9 @@
 package migrations
 
 import (
-	"github.com/ava-labs/avalanche-cli/pkg/application"
-	"github.com/ava-labs/avalanche-cli/pkg/localnet"
-	"github.com/ava-labs/avalanche-cli/pkg/ux"
+	"github.com/paulgnz/metal-cli/pkg/application"
+	"github.com/paulgnz/metal-cli/pkg/localnet"
+	"github.com/paulgnz/metal-cli/pkg/ux"
 )
 
 func migrateANRToTmpNet(app *application.Avalanche, _ *migrationRunner) error {

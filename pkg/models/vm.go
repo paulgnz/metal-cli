@@ -2,7 +2,7 @@
 // See the file LICENSE for licensing terms.
 package models
 
-import "github.com/ava-labs/avalanche-cli/pkg/constants"
+import "github.com/paulgnz/metal-cli/pkg/constants"
 
 type VMType string
 
